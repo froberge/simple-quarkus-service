@@ -1,6 +1,6 @@
-# First Quarkus project 
+# Simple Quarkus Service 
 
-This project uses [Quarkus](https://quarkus.io/), the Supersonic Subatomic Java Framework.
+This project uses [Quarkus](https://quarkus.io/), the Supersonic Subatomic Java Framework. It expose an REST endpoint that return a greeting message.
 
 
 ## Running the application
