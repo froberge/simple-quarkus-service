@@ -24,7 +24,9 @@ The application can be packaged using:
 ./mvnw package
 ```
 It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-:warniong: This is not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
+
+:warning: This is not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
+
 
 The application can be package in an  _über-jar_ using:
 ```
