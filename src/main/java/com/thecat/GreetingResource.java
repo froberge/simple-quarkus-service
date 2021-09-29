@@ -11,6 +11,6 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String greeting() {
-        return "Welcome to your first Quarkus app with trigger!!!";
+        return "Welcome to your first Quarkus app!!!";
     }
 }
