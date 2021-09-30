@@ -17,14 +17,4 @@ public class GreetingResourceTest {
              .statusCode(200)
              .body(is("Welcome to your first Quarkus app!!!"));
     }
-
-    @Test
-    public void testDemoEndpoint() {
-        given()
-          .when().get("/demo")
-          .then()
-             .statusCode(200)
-             .body(is("RedHat User Group trigger demo."));
-    }
-
 }

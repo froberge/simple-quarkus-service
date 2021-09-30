@@ -13,12 +13,4 @@ public class GreetingResource {
     public String greeting() {
         return "Welcome to your first Quarkus app!!!";
     }
-
-    @GET
-    @Path("/demo")
-    @Produces(MediaType.TEXT_PLAIN)
-    public String demo() {
-        return "RedHat User Group trigger demo.";
-    }
-
 }
