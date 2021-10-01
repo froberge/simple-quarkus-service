@@ -19,12 +19,12 @@ public class GreetingResourceTest {
     }
 
     @Test
-    public void testHelloEndpoint() {
+    public void testRhugEndpoint() {
         given()
-          .when().get("/hello")
+          .when().get("/rhug")
           .then()
              .statusCode(200)
-             .body(is("Hi welcome to the RHUG!"));
+             .body(is("Bienvenue au RHUG de Montreal et Quebec du 7 Octobre 2021 !!!") );
     }
 
 }

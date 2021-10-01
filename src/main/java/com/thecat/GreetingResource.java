@@ -15,10 +15,10 @@ public class GreetingResource {
     }
 
     @GET
-    @Path("/hello")
+    @Path("/rhug")
     @Produces(MediaType.TEXT_PLAIN)
-    public String hello() {
-        return "Hi welcome to the RHUG!"; 
+    public String rhug() {
+        return "Bienvenue au RHUG de Montreal et Quebec du 7 Octobre 2021 !!!"; 
     }
 
 }
