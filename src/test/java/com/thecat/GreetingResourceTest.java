@@ -17,4 +17,14 @@ public class GreetingResourceTest {
              .statusCode(200)
              .body(is("Welcome to your first Quarkus app!!!"));
     }
+
+    @Test
+    public void testHelloEndpoint() {
+        given()
+          .when().get("/hello")
+          .then()
+             .statusCode(200)
+             .body(is("Hi welcome to the RHUG!"));
+    }
+
 }
