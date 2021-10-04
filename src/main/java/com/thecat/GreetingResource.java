@@ -20,5 +20,4 @@ public class GreetingResource {
     // public String rhug() {
     //     return "Bienvenue au RHUG de Montreal et Quebec du 7 Octobre 2021 !!!"; 
     // }
-
 }
