@@ -14,10 +14,10 @@ public class GreetingResource {
         return "Welcome to your first Quarkus app!!!";
     }
 
-    // @GET
-    // @Path("/rhug")
-    // @Produces(MediaType.TEXT_PLAIN)
-    // public String rhug() {
-    //     return "Bienvenue au RHUG de Montreal et Quebec du 7 Octobre 2021 !!!"; 
-    // }
+    @GET
+    @Path("/rhug")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String rhug() {
+        return "Bienvenue au RHUG de Montreal et Quebec du 7 Octobre 2021 !!!"; 
+    }
 }
