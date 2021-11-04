@@ -15,9 +15,9 @@ public class GreetingResource {
     }
 
     @GET
-    @Path("/rhug")
+    @Path("/welcome")
     @Produces(MediaType.TEXT_PLAIN)
-    public String rhug() {
-        return "Bienvenue au RHUG de Montreal et Quebec du 7 Octobre 2021 !!!"; 
+    public String welcome() {
+        return "Bienvenue  au workshop CodeReady 5 Novembre 2021 !!!"; 
     }
 }

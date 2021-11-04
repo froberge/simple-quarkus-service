@@ -21,10 +21,10 @@ public class GreetingResourceTest {
     @Test
     public void testRhugEndpoint() {
         given()
-          .when().get("/rhug")
+          .when().get("/welcome")
           .then()
              .statusCode(200)
-             .body(is("Bienvenue au RHUG de Montreal et Quebec du 7 Octobre 2021 !!!") );
+             .body(is("Bienvenue  au workshop CodeReady 5 Novembre 2021 !!!") );
     }
 
 }
