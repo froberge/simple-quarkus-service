@@ -18,6 +18,6 @@ public class GreetingResource {
     @Path("/welcome")
     @Produces(MediaType.TEXT_PLAIN)
     public String welcome() {
-        return "Bienvenue  au workshop CodeReady 5 Novembre 2021 !!!"; 
+        return "Bienvenue au workshop CodeReady 5 Novembre 2021!!!"; 
     }
 }
