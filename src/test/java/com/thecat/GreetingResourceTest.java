@@ -18,13 +18,12 @@ public class GreetingResourceTest {
              .body(is("Welcome to your first Quarkus app!!!"));
     }
 
-    @Test
-    public void testRhugEndpoint() {
-        given()
-          .when().get("/w")
-          .then()
-             .statusCode(200)
-             .body(is("Bienvenue au workshop CodeReady 5 Novembre 2021!!!") );
-    }
-
+    // @Test
+    // public void testRhugEndpoint() {
+    //     given()
+    //       .when().get("/rhug")
+    //       .then()
+    //          .statusCode(200)
+    //          .body(is("Bienvenue au RHUG de Québec et Montréal") );
+    // }
 }
