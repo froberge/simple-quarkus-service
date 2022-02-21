@@ -1,4 +1,4 @@
-apiVersion: 1.0.0
+apiVersion: 2.0.0
 metadata:
   name: simple-quarkus-servicelnaf
 projects:
@@ -30,7 +30,7 @@ components:
     endpoints:
       - name: quarkus-development-server
         port: 8080
-      - name: simple-quarkus-service-endpoint/
+      - name: service-endpoint
         port: 8080
         attributes:
           path: /
