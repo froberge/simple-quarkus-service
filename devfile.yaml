@@ -1,4 +1,4 @@
-apiVersion: 2.0.0
+apiVersion: 1.0.0
 metadata:
   name: simple-quarkus-servicelnaf
 projects:
