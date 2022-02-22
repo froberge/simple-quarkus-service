@@ -23,10 +23,10 @@ public class GreetingResource {
         return this.greetingMessage;
     }
 
-    @GET
-    @Path("/rhug")
-    @Produces(MediaType.TEXT_PLAIN)
-    public String welcome() {
-        return this.rhugMessage; 
-    }
+    // @GET
+    // @Path("/rhug")
+    // @Produces(MediaType.TEXT_PLAIN)
+    // public String welcome() {
+    //     return this.rhugMessage; 
+    // }
 }
