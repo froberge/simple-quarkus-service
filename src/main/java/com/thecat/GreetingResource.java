@@ -14,8 +14,8 @@ public class GreetingResource {
     @ConfigProperty( name="greeting.message" )
     private String greetingMessage;
 
-    // @ConfigProperty( name="rhug.message" )
-    // private String rhugMessage;
+    @ConfigProperty( name="rhug.message" )
+    private String rhugMessage;
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
@@ -23,10 +23,10 @@ public class GreetingResource {
         return this.greetingMessage;
     }
 
-    // @GET
-    // @Path("/rhug")
-    // @Produces(MediaType.TEXT_PLAIN)
-    // public String welcome() {
-    //     return this.rhugMessage; 
-    // }
+    @GET
+    @Path("/rhug")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String welcome() {
+        return this.rhugMessage; 
+    }
 }
