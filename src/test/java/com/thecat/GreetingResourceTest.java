@@ -15,15 +15,15 @@ public class GreetingResourceTest {
           .when().get("/")
           .then()
              .statusCode(200)
-             .body(is("Welcome to your first Quarkus app!!!"));
+             .body(is("Welcome to your first Quarkus app!"));
     }
 
-    // @Test
-    // public void testRhugEndpoint() {
-    //     given()
-    //       .when().get("/rhug")
-    //       .then()
-    //          .statusCode(200)
-    //          .body(is("Bienvenue au RHUG de Québec et Montréal") );
-    // }
+    @Test
+    public void testRhugEndpoint() {
+        given()
+          .when().get("/rhug")
+          .then()
+             .statusCode(200)
+             .body(is("Bienvenue au RHUG de Québec et Montréal") );
+    }
 }
