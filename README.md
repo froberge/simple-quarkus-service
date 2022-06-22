@@ -15,8 +15,6 @@ The applicaiton can be run in test mode only using:
 ./mvnw clean test
 ```
 
-
-
 ## Packaging the application
 
 The application can be packaged using:
@@ -58,8 +56,35 @@ The native executable using:
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.html.
 
 
+## Create an image using podman
+
+Package the code first.
+
+```
+podman build -t [IMAGE_NAME]:[IMAGE_TAG] .
+```
+
+## Run the image using podman
+
+```
+podman run --name simple-quarkus -d -p 8080:8080 [IMAGE_NAME]:[IMAGE_TAG]
+```
+
+## Stop the container using podman
+```
+podman stop simple-quarkus
+```
+
+## Delete the container using podman
+```
+podman rm simple-quarkus
+```
+
+
+
 ## Define endpoint
 
 Endpoint | Description |  
 ---------|-------------|
 / | The default endpoint
+/rhug | Used for the Red Hat user group
