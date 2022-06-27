@@ -15,7 +15,7 @@ public class GreetingResourceTest {
           .when().get("/")
           .then()
              .statusCode(200)
-             .body(is("greeting.message=Welcome to your first Quarkus app. Tekton Pipeline!!"));
+             .body(is("Welcome to your first Quarkus app. !!"));
     }
 
     @Test
