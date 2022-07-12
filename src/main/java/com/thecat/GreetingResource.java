@@ -17,6 +17,10 @@ public class GreetingResource {
     @ConfigProperty( name="rhug.message" )
     private String rhugMessage;
 
+    @ConfigProperty( name="knative.serving.message" )
+    private String servingMessage;
+
+
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String greeting() {
@@ -26,7 +30,14 @@ public class GreetingResource {
     @GET
     @Path("/rhug")
     @Produces(MediaType.TEXT_PLAIN)
-    public String welcome() {
+    public String rhug() {
         return this.rhugMessage; 
+    }
+
+    @GET
+    @Path("/serverless")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String serving() {
+        return this.servingMessage; 
     }
 }

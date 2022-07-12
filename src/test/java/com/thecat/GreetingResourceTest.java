@@ -26,4 +26,14 @@ public class GreetingResourceTest {
              .statusCode(200)
              .body(is("Bienvenue au RHUG de Québec et Montréal") );
     }
+
+    @Test
+    public void testServingEndpoint() {
+        given()
+          .when().get("/serverless")
+          .then()
+             .statusCode(200)
+             .body(is("Welcome to the app in Knative serving") );
+    }
+
 }
