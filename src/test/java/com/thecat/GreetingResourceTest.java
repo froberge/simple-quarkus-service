@@ -33,7 +33,7 @@ public class GreetingResourceTest {
           .when().get("/serverless")
           .then()
              .statusCode(200)
-             .body(is("Welcome to the app in Knative serving") );
+             .body(is("Welcome to the app in Knative serving Trigger test !") );
     }
 
 }
