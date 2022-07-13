@@ -88,3 +88,4 @@ Endpoint | Description |
 ---------|-------------|
 / | The default endpoint
 /rhug | Used for the Red Hat user group
+/serverless | Use for the OCP Pipeline demo with Knative serverless
