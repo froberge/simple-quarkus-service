@@ -50,7 +50,7 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 
 The native executable using: 
 ```
-./target/quarkus-greeting-1.0.0-SNAPSHOT-runner
+./target/simple-quarkus-service-1.0.0-SNAPSHOT-runner
 ```
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.html.
@@ -86,6 +86,6 @@ podman rm simple-quarkus
 
 Endpoint | Description |  
 ---------|-------------|
-/ | The default endpoint
-/rhug | Used for the Red Hat user group
-/serverless | Use for the OCP Pipeline demo with Knative serverless
+/greeting | The default endpoint
+/greeting/rhug | Used for the Red Hat user group
+/greeting/serverless | Use for the OCP Pipeline demo with Knative serverless

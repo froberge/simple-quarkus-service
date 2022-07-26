@@ -15,7 +15,7 @@ public class GreetingResourceTest {
           .when().get("/")
           .then()
              .statusCode(200)
-             .body(is("Welcome to your first Quarkus app! GitOps style. All the way to PROD create PR."));
+             .body(is("Welcome to your first Quarkus app!"));
     }
 
     @Test
@@ -33,7 +33,7 @@ public class GreetingResourceTest {
           .when().get("/serverless")
           .then()
              .statusCode(200)
-             .body(is("Welcome to the app in Knative serving Trigger test !") );
+             .body(is("Welcome to the app in Knative serving!") );
     }
 
 }

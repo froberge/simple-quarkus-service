@@ -7,7 +7,7 @@ import javax.ws.rs.core.MediaType;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
-@Path("/")
+@Path("/greeting")
 public class GreetingResource {
 
 
@@ -22,6 +22,7 @@ public class GreetingResource {
 
 
     @GET
+    @Path("/")
     @Produces(MediaType.TEXT_PLAIN)
     public String greeting() {
         return this.greetingMessage;
