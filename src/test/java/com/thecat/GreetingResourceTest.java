@@ -12,7 +12,7 @@ public class GreetingResourceTest {
     @Test
     public void testGreetingEndpoint() {
         given()
-          .when().get("/")
+          .when().get("/greeting")
           .then()
              .statusCode(200)
              .body(is("Welcome to your first Quarkus app!"));
@@ -21,7 +21,7 @@ public class GreetingResourceTest {
     @Test
     public void testRhugEndpoint() {
         given()
-          .when().get("/rhug")
+          .when().get("/greeting/rhug")
           .then()
              .statusCode(200)
              .body(is("Bienvenue au RHUG de Québec et Montréal") );
@@ -30,7 +30,7 @@ public class GreetingResourceTest {
     @Test
     public void testServingEndpoint() {
         given()
-          .when().get("/serverless")
+          .when().get("/greeting/serverless")
           .then()
              .statusCode(200)
              .body(is("Welcome to the app in Knative serving!") );
