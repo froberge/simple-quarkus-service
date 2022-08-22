@@ -84,6 +84,9 @@ podman rm simple-quarkus
 
 ## Define endpoint
 
+The root URL shows the different endpoint and some UI.
+
+
 Endpoint | Description |  
 ---------|-------------|
 /greeting | The default endpoint
