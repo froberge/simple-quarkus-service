@@ -24,7 +24,7 @@ public class GreetingResourceTest {
           .when().get("/greeting/rhug")
           .then()
              .statusCode(200)
-             .body(is("Bienvenue au RHUG de Québec et Montréal") );
+             .body(is("Welcome to the RHUG.") );
     }
 
     @Test
