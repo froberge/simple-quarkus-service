@@ -36,6 +36,13 @@ public class GreetingResource {
     }
 
     @GET
+    @Path("/cae")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String cae() {
+        return "Hello CAE!!"; 
+    }
+
+    @GET
     @Path("/serverless")
     @Produces(MediaType.TEXT_PLAIN)
     public String serving() {
