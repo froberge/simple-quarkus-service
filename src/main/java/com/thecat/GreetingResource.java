@@ -39,7 +39,7 @@ public class GreetingResource {
     @Path("/cae")
     @Produces(MediaType.TEXT_PLAIN)
     public String cae() {
-        return "Hello CAE!!"; 
+        return "Hello CAE - S2I demo !!"; 
     }
 
     @GET
