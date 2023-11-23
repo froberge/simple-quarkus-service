@@ -14,8 +14,8 @@ public class GreetingResource {
     @ConfigProperty( name="greeting.message" )
     private String greetingMessage;
 
-    @ConfigProperty( name="rhug.message" )
-    private String rhugMessage;
+    @ConfigProperty( name="usergroup.message" )
+    private String userGroupMessage;
 
     @ConfigProperty( name="knative.serving.message" )
     private String servingMessage;
@@ -29,10 +29,10 @@ public class GreetingResource {
     }
 
     @GET
-    @Path("/rhug")
+    @Path("/usergroup")
     @Produces(MediaType.TEXT_PLAIN)
-    public String rhug() {
-        return this.rhugMessage; 
+    public String userGroup() {
+        return this.userGroupMessage; 
     }
 
     @GET

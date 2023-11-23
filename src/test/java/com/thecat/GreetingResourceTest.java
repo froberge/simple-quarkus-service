@@ -19,12 +19,12 @@ public class GreetingResourceTest {
     }
 
     @Test
-    public void testRhugEndpoint() {
+    public void testUserGroupEndpoint() {
         given()
-          .when().get("/greeting/rhug")
+          .when().get("/greeting/usergroup")
           .then()
              .statusCode(200)
-             .body(is("Welcome to the RHUG.") );
+             .body(is("Welcome to the AWS User Group.") );
     }
 
     @Test
