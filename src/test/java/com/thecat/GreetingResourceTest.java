@@ -26,14 +26,4 @@ public class GreetingResourceTest {
              .statusCode(200)
              .body(is("Welcome to the AWS User Group.") );
     }
-
-    @Test
-    public void testServingEndpoint() {
-        given()
-          .when().get("/greeting/serverless")
-          .then()
-             .statusCode(200)
-             .body(is("Welcome to the app in Knative serving!") );
-    }
-
 }

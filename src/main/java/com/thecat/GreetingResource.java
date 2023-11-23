@@ -17,10 +17,6 @@ public class GreetingResource {
     @ConfigProperty( name="usergroup.message" )
     private String userGroupMessage;
 
-    @ConfigProperty( name="knative.serving.message" )
-    private String servingMessage;
-
-
     @GET
     @Path("/")
     @Produces(MediaType.TEXT_PLAIN)
@@ -33,12 +29,5 @@ public class GreetingResource {
     @Produces(MediaType.TEXT_PLAIN)
     public String userGroup() {
         return this.userGroupMessage; 
-    }
-
-    @GET
-    @Path("/serverless")
-    @Produces(MediaType.TEXT_PLAIN)
-    public String serving() {
-        return this.servingMessage; 
     }
 }
