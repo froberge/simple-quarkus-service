@@ -24,6 +24,6 @@ public class GreetingResourceTest {
           .when().get("/greeting/usergroup")
           .then()
              .statusCode(200)
-             .body(is("Welcome to the ARO 5.") );
+             .body(is("Welcome to user group.") );
     }
 }
