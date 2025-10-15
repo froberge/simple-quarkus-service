@@ -24,6 +24,6 @@ public class GreetingResourceTest {
           .when().get("/greeting/usergroup")
           .then()
              .statusCode(200)
-             .body(is("Bonjour demo 3") );
+             .body(is("Bonjour demo 4") );
     }
 }
